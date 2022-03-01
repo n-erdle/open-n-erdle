@@ -1,18 +1,15 @@
 import seedrandom from "seedrandom";
 import { GameMode } from "./enums";
-import wordLists from "./words_5_6";
-
-export const SIXLETTERDAY = 110;
+import wordList from "./words_5";
 
 export const ROWS = 6;
 
-export const COLS = ((getWordNumber() < SIXLETTERDAY) ? 5 : 6);
+export const COLS = 5;
 
 export const words = {
-	words: wordLists.words,
-    valid: ((getWordNumber() < SIXLETTERDAY) ? wordLists.validFive : wordLists.validSix),
+	...wordList,
 	contains: (word: string) => {
-		return words.words.includes(word) || words.valid.includes(word);
+		return wordList.words.includes(word) || wordList.valid.includes(word);
 	},
 };
 

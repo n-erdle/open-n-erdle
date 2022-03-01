@@ -25,10 +25,8 @@
 		checkHardMode,
 		ROWS,
 		COLS,
-        SIXLETTERDAY,
 		newSeed,
 		createNewGame,
-//		seededRandomInt,
         getWordNumber,
 		createLetterStates,
 		words,
@@ -141,16 +139,13 @@
 	}
 
 	function reload() {
-//		modeData.modes[$mode].historical = false;
 		modeData.modes[$mode].seed = newSeed();
 		game = createNewGame($mode);
-//		word = words.words[seededRandomInt(0, words.words.length, modeData.modes[$mode].seed)];
         word = words.words[getWordNumber() % words.words.length]
         $letterStates = createLetterStates();
 		showStats = false;
 		showRefresh = false;
 		timer.reset($mode);
-        if (SIXLETTERDAY<=getWordNumber() && COLS===5) location.reload();
 	}
 
 	onMount(() => {

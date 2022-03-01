@@ -72,7 +72,6 @@
         align-items: center;
         text-align: center;
         vertical-align: middle;
-        border-radius: 33%;
 		place-items: center;
 		position: absolute;
 		inset: 0;

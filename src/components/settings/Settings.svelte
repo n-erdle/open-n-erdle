@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { getContext, onMount } from "svelte";
 
-	import { mode, darkTheme, fancyFont, colorBlindTheme, hardMode } from "../../stores";
+	import { mode, darkTheme, colorBlindTheme, hardMode } from "../../stores";
 	import { modeData } from "../../utils";
 	import { Toaster } from "../widgets";
 	import Setting from "./Setting.svelte";
@@ -25,18 +25,14 @@
 			$colorBlindTheme
 				? root.classList.add("colorblind")
 				: root.classList.remove("colorblind");
-            $fancyFont ? root.classList.add("fancyfont") : root.classList.remove("fancyfont");
             localStorage.setItem("darkTheme",$darkTheme)
             localStorage.setItem("colorBlindTheme",$colorBlindTheme)
-            localStorage.setItem("fancyFont",$fancyFont)
-            // Old storage (to be removed):
-            //localStorage.setItem("settings", JSON.stringify($settings));
 		}
 	}
 </script>
 
 <!-- not currently supported, see https://github.com/sveltejs/svelte/issues/3105 -->
-<!-- <svelte:body class:light={!$darkTheme} class:colorblind={$colorBlindTheme} class:fancyfont={$fancyFont} /> -->
+<!-- <svelte:body class:light={!$darkTheme} class:colorblind={$colorBlindTheme} /> -->
 <div class="outer">
 	<div class="settings-top">
 		<h3>settings</h3>
@@ -58,10 +54,6 @@
 		<Setting type="switch" bind:value={$colorBlindTheme}>
 			<span slot="title">Colour Blind Mode</span>
 			<span slot="desc">High contrast colours</span>
-		</Setting>
-		<Setting type="switch" bind:value={$fancyFont}>
-			<span slot="title">Fancy font mode</span>
-			<span slot="desc">For the full choral experience</span>
 		</Setting>
         <div style="display: flex; justify-content: space-between; align-items: center;">
             <div>

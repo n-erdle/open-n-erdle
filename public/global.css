@@ -67,10 +67,6 @@ body {
 	--color-present: #85c0f9;
 }
 
-.fancyfont {
-    --tile-font: 'Uncial Antiqua', 'Helvetica Neue', Arial, sans-serif;      
-}
-
 h3 {
 	text-align: center;
 	text-transform: uppercase;

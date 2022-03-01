@@ -24,7 +24,7 @@
     <WhatsApp class="share-button" text="{stats} {url}" />
     <div class="copybutton"
         on:click={() => {
-            navigator.clipboard.writeText(stats.concat("https://www.byrdle.net"));
+            navigator.clipboard.writeText(stats.concat(url));
 		    toaster.pop("Copied to clipboard");    
         }}
     >

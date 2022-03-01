@@ -78,22 +78,9 @@
             Delete
         </span></div>
     </div>
-        <div class="links">
-			Feedback
-			<a href="https://twitter.com/intent/tweet?screen_name=rbrignall" target="_blank">Twitter</a>
-		</div>
-        <h3 style="margin-top: 10px;">Credits</h3>
-        <div>
-            <p>This game is inspired by <a href="https://www.powerlanguage.co.uk/wordle/" target="_blank">Wordle</a>, and is an implementation of an idea of <a href="https://twitter.com/QuireMemes">QuireMemes</a>.</p>
-            <p>The <a href="https://github.com/rbrignall/open-byrdle">code</a> is open source, written with Svelte in Typescript by <a href="https://github.com/rbrignall" target="_blank">rbrignall</a> on a base by <a href="https://github.com/MikhaD" target="_blank">MikhaD</a>.</p>
-        </div>
-        
-        <div>
-	       Byrdle is free to play and ad-free, but you can <a href="https://www.buymeacoffee.com/rbrignall" target="_blank">buy me a coffee</a>!
-        </div>
 	</div>
     <div class="footer">
-        <div>Version: Byrd 5.0.2</div>
+        <div>Developed by <a href="https://github.com/rbrignall" target="_blank">rbrignall</a></div>
         <div class="word">
             Game #{wordNumber+1}
         </div>
@@ -121,12 +108,13 @@
     }
 	.footer {
 		color: var(--fg-secondary);
+		font-size: var(--fs-tiny);
 		display: flex;
 		justify-content: space-between;
 		align-items: flex-end;
 		text-align: end;
         width: 100%;
-        padding: 16px 0px;
+        padding: 0px 0px;
 	}
     .settings-top {
         padding: 0px 0px 30px 0px;

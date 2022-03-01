@@ -208,7 +208,7 @@
 <Modal
 	bind:visible={showTutorial}
 >
-	<Tutorial visible={showTutorial} imported={showImport} />
+	<Tutorial visible={showTutorial} />
 </Modal>
 
 

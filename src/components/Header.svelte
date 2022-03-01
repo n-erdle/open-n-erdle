@@ -37,7 +37,7 @@
 		{/if}
 	</div>
 	<h1>
-		byrdle
+		n-erdle
 	</h1>
 	<div class="icons">
 		{#if showStats}
@@ -81,6 +81,6 @@
 		width: 100%;
 		font-size: var(--fs-large);
 		text-align: center;
-        font-family: 'Uncial Antiqua', 'Helvetica Neue', Arial, sans-serif;
+        font-family: 'Helvetica Neue', Arial, sans-serif;
 	}
 </style>

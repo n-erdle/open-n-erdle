@@ -14,7 +14,6 @@
 		Distribution,
 		Timer,
 		Toaster,
-		ShareGame,
 	} from "./widgets";
 	import {
 		contractNum,
@@ -211,7 +210,6 @@
 		/>
 		<Share slot="2" state={game} />
 	</Separator>
-	<ShareGame />
 </Modal>
 
 <Modal bind:visible={showSettings}>

@@ -8,9 +8,9 @@
 
 	export let state: GameState;
 	const toaster = getContext<Toaster>("toaster");
-    const url ="https://www.byrdle.net";
+    const url ="https://www.n-erdle.github.io";
 
-	$: stats = `Byrdle ${state.wordNumber+1} ${
+	$: stats = `n-erdle ${state.wordNumber+1 % 3} ${
 		(state.gameStatus === 'WIN') ? state.guesses : "X"
 	}/${state.boardState.length}\n\n${state.evaluations
 		.slice(0, state.guesses)

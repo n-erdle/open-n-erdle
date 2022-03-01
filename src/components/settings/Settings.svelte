@@ -95,17 +95,6 @@
         justify-content: space-between;*/
         position: relative;
     }
-	.links {
-		font-size: var(--fs-medium);
-		font-weight: 500;
-		border-bottom: 1px solid var(--border-primary);
-		color: var(--fg-primary);
-		display: flex;
-		justify-content: space-between;
-	}
-    .links a:link{
-        font-weight: 400;
-    }
 	.footer {
 		color: var(--fg-secondary);
 		font-size: var(--fs-tiny);

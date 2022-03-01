@@ -82,7 +82,7 @@
     <div class="footer">
         <div>Developed by <a href="https://github.com/rbrignall" target="_blank">rbrignall</a></div>
         <div class="word">
-            Game #{wordNumber+1}
+            Game #{(wordNumber+1) % 3}
         </div>
     </div>
 </div>

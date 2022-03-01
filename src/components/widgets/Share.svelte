@@ -10,11 +10,11 @@
 	const toaster = getContext<Toaster>("toaster");
     const url ="https://www.n-erdle.github.io";
 
-	$: stats = `n-erdle ${state.wordNumber+1 % 3} ${
+	$: stats = `n-erdle ${(state.wordNumber+1) % 3} ${
 		(state.gameStatus === 'WIN') ? state.guesses : "X"
 	}/${state.boardState.length}\n\n${state.evaluations
 		.slice(0, state.guesses)
-		.map((r) => r.map((l) => l === "absent" ? "⚪" : (l === "correct" ? "🟢" : "🟡")).join(""))
+		.map((r) => r.map((l) => l === "absent" ? "⬜" : (l === "correct" ? "🟩" : "🟨")).join(""))
 		.join("\n")}\n`;
     
 </script>

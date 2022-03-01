@@ -8,5 +8,4 @@ export const letterStates = writable(createLetterStates());
 
 export const darkTheme = writable(false);
 export const colorBlindTheme = writable(false);
-export const fancyFont = writable(false);
 export const hardMode = writable(false);
